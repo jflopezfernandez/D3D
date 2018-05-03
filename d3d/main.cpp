@@ -43,12 +43,4 @@ int main(int argc, char *argv[])
 	};
 
 	PrintList(people);
-
-	/*std::vector<std::string> applicationArgs;
-
-	for (auto i = 1; i < argc; i++) {
-		applicationArgs.emplace_back(std::string(argv[i]));
-	}
-
-	PrintVector<std::string>(applicationArgs);*/
 }

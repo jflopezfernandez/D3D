@@ -35,4 +35,20 @@ void PrintLnList(const std::vector<std::string>& vector) {
 	PrintLnVector(vector);
 }
 
+namespace List {
+	
+	// TODO: Fix this
+
+	template <typename T>
+	void PrintLnaaaa(const List& elements) {
+		for (auto& e : elements) {
+			IO::PrintLn(e);
+		}
+	}
+
+	void PrintLnListaaaa(const List& elements) {
+		IO::PrintLn(elements);
+	}
+}
+
 #endif // D3D_LIST_HPP

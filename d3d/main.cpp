@@ -15,7 +15,7 @@
 
 int main(int argc, char *argv[])
 {
-	List people = {
+	const List people = {
 		"Jose",
 		"Jake",
 		"John",

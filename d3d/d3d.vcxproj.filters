@@ -20,7 +20,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="IO.hpp">
+    <ClInclude Include="D3D\IO.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D3D\List.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

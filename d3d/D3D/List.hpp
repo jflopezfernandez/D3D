@@ -15,12 +15,24 @@ using List = std::vector<std::string>;
 template <typename T>
 void PrintVector(const std::vector<T>& vector) {
 	for (auto& v : vector) {
-		std::cout << v << '\n';
+		// std::cout << v << '\n';
+		IO::Print(v);
 	}
 }
 
 void PrintList(const std::vector<std::string>& vector) {
 	PrintVector(vector);
+}
+
+template <typename T>
+void PrintLnVector(const std::vector<T>& vector) {
+	for (auto& v : vector) {
+		IO::PrintLn(v);
+	}
+}
+
+void PrintLnList(const std::vector<std::string>& vector) {
+	PrintLnVector(vector);
 }
 
 #endif // D3D_LIST_HPP

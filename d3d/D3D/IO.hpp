@@ -22,6 +22,17 @@ struct IOConfig {
 
 namespace IO {
 	template <typename T>
+	void Print(T arg) {
+		std::cout << arg << ' ';
+	}
+
+	template <typename T, typename... Types>
+	void Print(T arg, Types... args) {
+		std::cout << arg << ' ';
+		Print(args...);
+	}
+
+	template <typename T>
 	void PrintLn(T arg) {
 		std::cout << arg << '\n';
 	}

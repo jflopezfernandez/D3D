@@ -4,32 +4,14 @@
 #include <Windows.h>
 #endif // WINDOWS_HEADER_INCLUDED
 
-#ifndef STDLIB_STRING_INCLUDED
-#define STDLIB_STRING_INCLUDED
-#include <string>
-#endif // STDLIB_STRING_INCLUDED
-
-#ifndef STDLIB_VECTOR_INCLUDED
-#define STDLIB_VECTOR_INCLUDED
-#include <vector>
-#endif // STDLIB_VECTOR_INCLUDED
-
 #ifndef D3D_IO_HPP
-#include "IO.hpp"
+#include <D3D/IO.hpp>
 #endif // D3D_IO_HPP
 
-using List = std::vector<std::string>;
+#ifndef D3D_LIST_HPP
+#include <D3D/List.hpp>
+#endif // D3D_LIST_HPP
 
-template <typename T>
-void PrintVector(const std::vector<T>& vector) {
-	for (auto& v : vector) {
-		std::cout << v << '\n';
-	}
-}
-
-void PrintList(const std::vector<std::string>& vector) {
-	PrintVector(vector);
-}
 
 int main(int argc, char *argv[])
 {

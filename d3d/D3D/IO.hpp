@@ -1,6 +1,11 @@
 #ifndef D3D_IO_HPP
 #define D3D_IO_HPP
 
+#ifndef STDLIB_STRING_INCLUDED
+#define STDLIB_STRING_INCLUDED
+#include <string>
+#endif // STDLIB_STRING_INCLUDED
+
 #ifndef STDLIB_IOSTREAM_INCLUDED
 #define STDLIB_IOSTREAM_INCLUDED
 #include <iostream>
@@ -26,6 +31,6 @@ namespace IO {
 		std::cout << arg << '\n';
 		PrintLn(args...);
 	}
-}
+} // End namespace IO
 
 #endif // D3D_IO_HPP
